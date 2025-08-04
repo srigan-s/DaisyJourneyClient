@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
             
             {/* Contact Column */}
             <div>
-              <h3 className="text-2xl font-semibold mb-6">Contact Us</h3>
+              <h3 className="text-xl font-semibold mb-6">Contact Us</h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <MapPin size={20} className="mr-3 mt-1 flex-shrink-0" />
