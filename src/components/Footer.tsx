@@ -82,7 +82,7 @@ const Footer: React.FC = () => {
                   <span className="text-gray-300">(647) 615-0533</span>
                 </li>
                 <li className="flex items-center">
-                  <Mail size={10} className="mr-3 flex-shrink-0" />
+                  <Mail size={20} className="mr-3 flex-shrink-0" />
                   <a href="mailto:daisysjourney.program@gmail.com" className="text-gray-300 hover:text-white transition-colors duration-200">
                     daisysjourney.program@gmail.com
                   </a>
