@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
     <footer className="bg-primary-900 text-white pt-20 pb-8">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 overflow-hidden break-words">
             {/* About Column */}
             <div>
               <h3 className="text-2xl font-semibold mb-6">Daisy's Journey</h3>
@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
             </div>
             
             {/* Contact Column */}
-            <div>
+            <div className="max-w-sm">
               <h3 className="text-2xl font-semibold mb-6">Contact Us</h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
@@ -81,18 +81,17 @@ const Footer: React.FC = () => {
                   <Phone size={20} className="mr-3 flex-shrink-0" />
                   <span className="text-gray-300">(647) 615-0533</span>
                 </li>
-               <li className="flex items-start">
-  <Mail size={20} className="mr-3 mt-1 flex-shrink-0" />
-  <div className="text-gray-300 break-words max-w-xs">
-    <a 
-      href="mailto:daisysjourney.program@gmail.com" 
-      className="hover:text-white transition-colors duration-200"
-    >
-      daisysjourney.program@gmail.com
-    </a>
-  </div>
-</li>
-
+                <li className="flex items-start break-words max-w-full">
+                  <Mail size={20} className="mr-3 mt-1 flex-shrink-0" />
+                  <div className="text-gray-300 break-words max-w-xs overflow-hidden">
+                    <a 
+                      href="mailto:daisysjourney.program@gmail.com" 
+                      className="hover:text-white transition-colors duration-200 break-words text-sm sm:text-base"
+                    >
+                      daisysjourney.program@gmail.com
+                    </a>
+                  </div>
+                </li>
               </ul>
             </div>
             
