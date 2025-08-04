@@ -97,7 +97,7 @@ const Partners: React.FC = () => {
             
             <div>
               <img
-                src="https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
+                src="https://images.squarespace-cdn.com/content/v1/65367682ba14580bbb5ac9bc/1704387877705-SJYN6IJMQMSPKNXPL3WQ/ARK_apotex_03.jpg"
                 alt="Hospital staff and volunteers collaborating"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
