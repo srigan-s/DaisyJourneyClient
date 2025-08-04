@@ -32,7 +32,7 @@ const Partners: React.FC = () => {
           <div className="max-w-4xl mx-auto">
             <PartnerCard 
               name="Baycrest Hospital"
-              logo="https://images.pexels.com/photos/8942991/pexels-photo-8942991.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
+              logo="/baycrest.png"
               description="A leading healthcare provider specializing in geriatric care, research, and innovation in aging and brain health."
               website="https://www.baycrest.org"
             />
