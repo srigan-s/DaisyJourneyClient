@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
             {/* About Column */}
             <div>
               <h3 className="text-2xl font-semibold mb-6">Daisy's Journey</h3>
-              <p className="text-gray-300 mb-6 leading-relaxed">
+              <p className="text-gray-3 mb-6 leading-relaxed">
                 Empowering lives through compassionate hospital volunteering, 
                 creating meaningful connections, and fostering healing environments.
               </p>
