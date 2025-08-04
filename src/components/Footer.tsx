@@ -81,9 +81,7 @@ const Footer: React.FC = () => {
                   <Phone size={20} className="mr-3 flex-shrink-0" />
                   <span className="text-gray-300">(647) 615-0533</span>
                 </li>
-                <li className="flex items-center">
-                  <Mail size={20} className="mr-3 flex-shrink-0" />
-<li className="flex items-start">
+               <li className="flex items-start">
   <Mail size={20} className="mr-3 mt-1 flex-shrink-0" />
   <div className="text-gray-300 break-words max-w-xs">
     <a 
@@ -95,8 +93,6 @@ const Footer: React.FC = () => {
   </div>
 </li>
 
-
-                </li>
               </ul>
             </div>
             
