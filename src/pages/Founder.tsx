@@ -146,7 +146,7 @@ const Founder: React.FC = () => {
                     </div>
                     <div>
                       <img
-                        src="https://images.pexels.com/photos/7089407/pexels-photo-7089407.jpeg"
+                        src="images/yasispeak.jpg"
                         alt="Future vision"
                         className="w-full h-auto rounded-lg shadow-md"
                       />
