@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import SectionHeading from '../components/SectionHeading';
 import { Heart, Shield, Users, Smile, Star, Clock } from 'lucide-react';
+import FloatingMedicalElements from '../components/FloatingMedicalElements';
 
 const Mission: React.FC = () => {
   useEffect(() => {
@@ -9,6 +10,7 @@ const Mission: React.FC = () => {
 
   return (
     <div>
+      <FloatingMedicalElements />
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-br from-primary-50 via-primary-100 to-secondary-50 animate-gradient">
         <div className="container mx-auto px-4 md:px-6">

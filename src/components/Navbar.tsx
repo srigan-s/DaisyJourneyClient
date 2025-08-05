@@ -97,8 +97,68 @@ const Navbar: React.FC = () => {
         </nav>
 
         {/* Mobile Menu */}
-        {isOpen && (
-          <div className="lg:hidden fixed inset-0 bg-white z-40 pt-24">
+        <div className={`lg:hidden fixed inset-0 bg-white z-40 pt-24 transition-all duration-300 ${
+          isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+        }`}>
+          <div className="flex flex-col items-center space-y-8 p-8">
+            <Link 
+              to="/" 
+              className="text-2xl font-medium text-gray-800 hover:text-primary-600 transition-colors duration-300"
+              onClick={() => setIsOpen(false)}
+            >
+              Home
+            </Link>
+            <Link 
+              to="/mission" 
+              className="text-2xl font-medium text-gray-800 hover:text-primary-600 transition-colors duration-300"
+              onClick={() => setIsOpen(false)}
+            >
+              Mission
+            </Link>
+            <Link 
+              to="/partners" 
+              className="text-2xl font-medium text-gray-800 hover:text-primary-600 transition-colors duration-300"
+              onClick={() => setIsOpen(false)}
+            >
+              Partners
+            </Link>
+            <Link 
+              to="/events" 
+              className="text-2xl font-medium text-gray-800 hover:text-primary-600 transition-colors duration-300"
+              onClick={() => setIsOpen(false)}
+            >
+              Events
+            </Link>
+            <Link 
+              to="/founder" 
+              className="text-2xl font-medium text-gray-800 hover:text-primary-600 transition-colors duration-300"
+              onClick={() => setIsOpen(false)}
+            >
+              Founder
+            </Link>
+            
+            <div className="flex space-x-8 mt-12">
+              <a 
+                href="https://www.linkedin.com/company/daisy-s-journey/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-primary-600 transition-colors duration-300"
+                aria-label="LinkedIn"
+              >
+                <Linkedin size={28} />
+              </a>
+              <a 
+                href="https://www.instagram.com/journeywithdaisy/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-primary-600 transition-colors duration-300"
+                aria-label="Instagram"
+              >
+                <Instagram size={28} />
+              </a>
+            </div>
+          </div>
+        </div>
             <div className="flex flex-col items-center space-y-8 p-8">
               <Link 
                 to="/" 

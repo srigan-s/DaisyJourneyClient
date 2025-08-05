@@ -9,7 +9,7 @@ interface TestimonialCardProps {
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ quote, name, role, image }) => {
   return (
-    <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in-up border-t-4 border-gradient-to-r from-pink-400 to-purple-500">
+    <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in-up border-t-4 border-gradient-to-r from-pink-400 to-purple-500 animate-wobble">
       <div className="flex items-start space-x-4">
         {/* Headshot bubble */}
         <div className="relative flex-shrink-0">

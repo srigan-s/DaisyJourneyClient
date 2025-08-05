@@ -7,6 +7,7 @@ import 'swiper/css/pagination';
 import SectionHeading from '../components/SectionHeading';
 import Button from '../components/Button';
 import { Calendar } from 'lucide-react';
+import FloatingMedicalElements from '../components/FloatingMedicalElements';
 
 const Events: React.FC = () => {
   useEffect(() => {
@@ -48,6 +49,7 @@ const Events: React.FC = () => {
 
   return (
     <div>
+      <FloatingMedicalElements />
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-primary-50 animate-fade-in-up">
         <div className="container mx-auto px-4 md:px-6">

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import SectionHeading from '../components/SectionHeading';
 import { Quote } from 'lucide-react';
+import FloatingMedicalElements from '../components/FloatingMedicalElements';
 
 const Founder: React.FC = () => {
   useEffect(() => {
@@ -9,6 +10,7 @@ const Founder: React.FC = () => {
 
   return (
     <div>
+      <FloatingMedicalElements />
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-primary-50 animate-fade-in-up">
         <div className="container mx-auto px-4 md:px-6">

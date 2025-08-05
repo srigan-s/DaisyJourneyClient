@@ -66,6 +66,14 @@
     transform: translateY(-8px) scale(1.02);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   }
+  
+  .animate-float-wobble {
+    animation: floatWobble 4s ease-in-out infinite;
+  }
+  
+  .animate-wobble {
+    animation: wobble 2s ease-in-out infinite;
+  }
 }
 
 @keyframes float {
@@ -114,5 +122,35 @@
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@keyframes floatWobble {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-8px) rotate(2deg);
+  }
+  50% {
+    transform: translateY(-4px) rotate(-1deg);
+  }
+  75% {
+    transform: translateY(-12px) rotate(1deg);
+  }
+}
+
+@keyframes wobble {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(-1deg);
+  }
+  75% {
+    transform: rotate(0.5deg);
   }
 }

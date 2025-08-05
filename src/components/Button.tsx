@@ -38,7 +38,7 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       type={type}
-      className={`${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${disabledClasses} ${className}`}
+      className={`${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${disabledClasses} ${className} animate-wobble`}
       onClick={onClick}
       disabled={disabled}
     >

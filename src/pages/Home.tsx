@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 import SectionHeading from '../components/SectionHeading';
 import TestimonialCard from '../components/TestimonialCard';
+import FloatingMedicalElements from '../components/FloatingMedicalElements';
 
 const Home: React.FC = () => {
   useEffect(() => {
@@ -12,6 +13,7 @@ const Home: React.FC = () => {
 
   return (
     <div>
+      <FloatingMedicalElements />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-black/30 z-10"></div>

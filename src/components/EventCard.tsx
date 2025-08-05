@@ -20,7 +20,7 @@ const EventCard: React.FC<EventCardProps> = ({
   image,
 }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden group transition-all duration-300 hover:shadow-lg">
+    <div className="bg-white rounded-lg shadow-md overflow-hidden group transition-all duration-300 hover:shadow-lg animate-wobble">
       <div className="relative h-48 overflow-hidden">
         <img
           src={image}
