@@ -114,7 +114,7 @@ const Founder: React.FC = () => {
                   <div className="grid md:grid-cols-2 gap-8">
                     <div className="order-2 md:order-1">
                       <img
-                        src="https://images.pexels.com/photos/6129507/pexels-photo-6129507.jpeg"
+                        src="images/middle.jpg"
                         alt="Program expansion"
                         className="w-full h-auto rounded-lg shadow-md"
                       />
