@@ -127,9 +127,7 @@ const Partners: React.FC = () => {
             <Button size="lg" className="bg-white text-primary-600 hover:bg-gray-100">
               Contact Us to Learn More
             </Button>
-            <Button size="lg" className="bg-white text-primary-600 hover:bg-gray-100">
-              Contact Us to Learn More
-            </Button>
+            </a>
           </div>
         </div>
       </section>
