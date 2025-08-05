@@ -97,12 +97,10 @@ const Navbar: React.FC = () => {
         </nav>
 
         {/* Mobile Menu */}
-        <div className={`lg:hidden fixed inset-0 bg-white z-40 transition-all duration-400 ${
+        <div className={`lg:hidden fixed inset-0 bg-white z-40 pt-24 transition-all duration-300 ${
           isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}>
-          <div className={`flex flex-col items-center space-y-8 p-8 pt-24 h-full ${
-            isOpen ? 'animate-slide-in-from-right' : ''
-          }`}>
+          <div className="flex flex-col items-center space-y-8 p-8">
             <Link 
               to="/" 
               className="text-2xl font-medium text-gray-800 hover:text-primary-600 transition-colors duration-300"
