@@ -146,7 +146,7 @@ const Founder: React.FC = () => {
                     </div>
                     <div>
                       <img
-                        src="images/yasispeak.jpg"
+                        src="images/yasiSpeak.jpg"
                         alt="Future vision"
                         className="w-full h-auto rounded-lg shadow-md"
                       />
