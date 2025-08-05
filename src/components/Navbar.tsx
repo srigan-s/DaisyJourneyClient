@@ -9,8 +9,13 @@ const Navbar: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
     };
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -25,7 +30,10 @@ const Navbar: React.FC = () => {
       <Link
         to={to}
         className={`relative py-3 px-6 font-medium text-lg transition-all duration-300 
-        ${isActive ? 'text-primary-700' : 'text-gray-700 hover:text-primary-600'}
+        ${isActive 
+          ? 'text-primary-700' 
+          : 'text-gray-700 hover:text-primary-600'
+        }
         after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 
         after:bg-primary-500 after:transition-all after:duration-300
         ${isActive ? 'after:w-full' : 'hover:after:w-full'}`}
@@ -36,9 +44,11 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <header className={`fixed w-full z-50 transition-all duration-300 ${
-      scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg py-4' : 'bg-transparent py-6'
-    }`}>
+    <header 
+      className={`fixed w-full z-50 transition-all duration-300 ${
+        scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg py-4' : 'bg-transparent py-6'
+      }`}
+    >
       <div className="container mx-auto px-4 md:px-6">
         <nav className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-3">
@@ -46,57 +56,104 @@ const Navbar: React.FC = () => {
             <span className="text-2xl md:text-3xl font-bold text-primary-600">Daisy's Journey</span>
           </Link>
 
-          {/* Desktop Nav */}
+          {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-2">
             <NavLink to="/">Home</NavLink>
             <NavLink to="/mission">Mission</NavLink>
             <NavLink to="/partners">Partners</NavLink>
             <NavLink to="/events">Events</NavLink>
             <NavLink to="/founder">Founder</NavLink>
+            
             <div className="ml-8 flex items-center space-x-4">
-              <a href="https://www.linkedin.com/company/daisy-s-journey/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-600 hover:text-primary-600 p-2 transition-colors duration-300">
+              <a 
+                href="https://www.linkedin.com/company/daisy-s-journey/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-primary-600 transition-colors duration-300 p-2"
+                aria-label="LinkedIn"
+              >
                 <Linkedin size={22} />
               </a>
-              <a href="https://www.instagram.com/journeywithdaisy/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-gray-600 hover:text-primary-600 p-2 transition-colors duration-300">
+              <a 
+                href="https://www.instagram.com/journeywithdaisy/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-primary-600 transition-colors duration-300 p-2"
+                aria-label="Instagram"
+              >
                 <Instagram size={22} />
               </a>
             </div>
           </div>
 
-          {/* Mobile Toggle */}
-          <button className="lg:hidden text-gray-700 focus:outline-none p-2 z-50" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
+          {/* Mobile Navigation Button */}
+          <button 
+            className="lg:hidden text-gray-700 focus:outline-none p-2"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle Menu"
+          >
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </nav>
 
-        {/* Mobile Backdrop */}
-        <div
-          className={`fixed inset-0 z-40 bg-black/30 transition-opacity duration-300 lg:hidden ${
-            isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
-          }`}
-          onClick={() => setIsOpen(false)}
-        ></div>
-
-        {/* Mobile Slide-In Menu */}
-        <div className={`fixed top-0 right-0 h-full w-4/5 max-w-sm bg-white z-50 transition-transform duration-300 transform ${
-          isOpen ? 'translate-x-0' : 'translate-x-full'
-        } shadow-xl pt-24 px-6`}>
-          <div className="flex flex-col space-y-8 text-center">
-            {['/', '/mission', '/partners', '/events', '/founder'].map((path, i) => (
-              <Link
-                key={i}
-                to={path}
-                className="text-2xl font-medium text-gray-800 hover:text-primary-600 transition-colors duration-300"
-                onClick={() => setIsOpen(false)}
+        {/* Mobile Menu */}
+        <div className={`lg:hidden fixed inset-0 bg-white z-40 pt-24 transition-all duration-300 ${
+          isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+        }`}>
+          <div className="flex flex-col items-center space-y-8 p-8">
+            <Link 
+              to="/" 
+              className="text-2xl font-medium text-gray-800 hover:text-primary-600 transition-colors duration-300"
+              onClick={() => setIsOpen(false)}
+            >
+              Home
+            </Link>
+            <Link 
+              to="/mission" 
+              className="text-2xl font-medium text-gray-800 hover:text-primary-600 transition-colors duration-300"
+              onClick={() => setIsOpen(false)}
+            >
+              Mission
+            </Link>
+            <Link 
+              to="/partners" 
+              className="text-2xl font-medium text-gray-800 hover:text-primary-600 transition-colors duration-300"
+              onClick={() => setIsOpen(false)}
+            >
+              Partners
+            </Link>
+            <Link 
+              to="/events" 
+              className="text-2xl font-medium text-gray-800 hover:text-primary-600 transition-colors duration-300"
+              onClick={() => setIsOpen(false)}
+            >
+              Events
+            </Link>
+            <Link 
+              to="/founder" 
+              className="text-2xl font-medium text-gray-800 hover:text-primary-600 transition-colors duration-300"
+              onClick={() => setIsOpen(false)}
+            >
+              Founder
+            </Link>
+            
+            <div className="flex space-x-8 mt-12">
+              <a 
+                href="https://www.linkedin.com/company/daisy-s-journey/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-primary-600 transition-colors duration-300"
+                aria-label="LinkedIn"
               >
-                {path === '/' ? 'Home' : path.replace('/', '').charAt(0).toUpperCase() + path.slice(2)}
-              </Link>
-            ))}
-            <div className="flex justify-center space-x-8 mt-12">
-              <a href="https://www.linkedin.com/company/daisy-s-journey/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-600 hover:text-primary-600">
                 <Linkedin size={28} />
               </a>
-              <a href="https://www.instagram.com/journeywithdaisy/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-gray-600 hover:text-primary-600">
+              <a 
+                href="https://www.instagram.com/journeywithdaisy/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-primary-600 transition-colors duration-300"
+                aria-label="Instagram"
+              >
                 <Instagram size={28} />
               </a>
             </div>
