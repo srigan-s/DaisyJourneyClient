@@ -86,7 +86,7 @@ const Navbar: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="text-gray-600 hover:text-primary-600 p-2 transition-colors duration-300"
+                className="text-gray-600 hover:text-primary-600 transition-colors duration-300 flex items-center justify-center p-2"
               >
                 <Linkedin size={22} />
               </a>
@@ -95,7 +95,7 @@ const Navbar: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="text-gray-600 hover:text-primary-600 p-2 transition-colors duration-300"
+                className="text-gray-600 hover:text-primary-600 transition-colors duration-300 flex items-center justify-center p-2"
               >
                 <Instagram size={22} />
               </a>
@@ -146,7 +146,7 @@ const Navbar: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="text-gray-600 hover:text-primary-600"
+              className="text-gray-600 hover:text-primary-600 flex items-center justify-center"
             >
               <Linkedin size={28} />
             </a>
@@ -155,7 +155,7 @@ const Navbar: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="text-gray-600 hover:text-primary-600"
+              className="text-gray-600 hover:text-primary-600 flex items-center justify-center"
             >
               <Instagram size={28} />
             </a>
