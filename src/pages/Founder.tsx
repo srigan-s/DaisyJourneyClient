@@ -34,7 +34,7 @@ const Founder: React.FC = () => {
               <div className="relative">
                 <div className="absolute -top-6 -right-6 w-24 h-24 bg-secondary-100 rounded-lg z-0"></div>
                 <img
-                  src="images/yasi.jpg"
+                  src="images/yasibody.jpg"
                   alt="Yasmin Sheivari, Founder of Daisy's Journey"
                   className="w-full h-auto rounded-lg shadow-lg relative z-10"
                 />
