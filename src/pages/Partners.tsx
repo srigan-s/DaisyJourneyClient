@@ -120,7 +120,7 @@ const Partners: React.FC = () => {
               healthcare facility, we'd love to hear from you.
             </p>
             <a
-            href="https://www.instagram.com/journeywithdaisy/"
+            href="https://www.instagram.com/journeywithdaisy"
             target="_blank"
             rel="noopener noreferrer"
             > 
