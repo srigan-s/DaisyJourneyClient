@@ -10,14 +10,14 @@ const Founder: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-primary-50">
+      <section className="pt-32 pb-20 bg-primary-50 animate-fade-in-up">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 animate-fade-in-up">
               Our Founder's Story
             </h1>
-            <div className="h-1 w-20 bg-secondary-500 mx-auto mb-6 rounded"></div>
-            <p className="text-xl text-gray-600">
+            <div className="h-1 w-20 bg-secondary-500 mx-auto mb-6 rounded animate-pulse-slow"></div>
+            <p className="text-xl text-gray-600 animate-fade-in-up" style={{animationDelay: '0.3s'}}>
               The inspiring journey of Yasmin Sheivari and the birth of Daisy's Journey
             </p>
           </div>
@@ -25,7 +25,7 @@ const Founder: React.FC = () => {
       </section>
 
       {/* Founder Bio Section */}
-      <section className="py-20">
+      <section className="py-20 animate-fade-in-up">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -65,7 +65,7 @@ const Founder: React.FC = () => {
       </section>
 
       {/* Journey Timeline Section */}
-      <section className="py-20">
+      <section className="py-20 animate-fade-in-up">
         <div className="container mx-auto px-4 md:px-6">
           <SectionHeading 
             title="The Journey" 

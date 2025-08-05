@@ -13,7 +13,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ quote, name, role, im
       <div className="flex items-start space-x-4">
         {/* Headshot bubble */}
         <div className="relative flex-shrink-0">
-          <div className="w-16 h-16 rounded-full bg-gradient-to-br from-pink-400 via-purple-500 to-indigo-600 p-0.5 animate-float">
+          <div className="w-20 h-20 rounded-full bg-gradient-to-br from-pink-400 via-purple-500 to-indigo-600 p-0.5">
             <div className="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
               {image ? (
                 <img 
@@ -29,7 +29,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ quote, name, role, im
             </div>
           </div>
           {/* Online indicator */}
-          <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-green-500 rounded-full border-2 border-white animate-bounce"></div>
+          <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-green-500 rounded-full border-2 border-white"></div>
         </div>
         
         <div className="flex-1">

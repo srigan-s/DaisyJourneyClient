@@ -11,14 +11,14 @@ const Partners: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-primary-50">
+      <section className="pt-32 pb-20 bg-primary-50 animate-fade-in-up">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 animate-fade-in-up">
               Our Partner
             </h1>
-            <div className="h-1 w-20 bg-secondary-500 mx-auto mb-6 rounded"></div>
-            <p className="text-xl text-gray-600">
+            <div className="h-1 w-20 bg-secondary-500 mx-auto mb-6 rounded animate-pulse-slow"></div>
+            <p className="text-xl text-gray-600 animate-fade-in-up" style={{animationDelay: '0.3s'}}>
               Daisy's Journey collaborates with Baycrest Hospital to create impactful 
               volunteer experiences and improve patient care.
             </p>
@@ -27,7 +27,7 @@ const Partners: React.FC = () => {
       </section>
 
       {/* Hospital Partner Section */}
-      <section className="py-20">
+      <section className="py-20 animate-fade-in-up">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
             <PartnerCard 
@@ -41,7 +41,7 @@ const Partners: React.FC = () => {
       </section>
 
       {/* Partnership Benefits Section */}
-      <section className="py-20 bg-primary-50">
+      <section className="py-20 bg-primary-50 animate-fade-in-up">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>

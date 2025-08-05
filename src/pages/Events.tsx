@@ -49,14 +49,14 @@ const Events: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-primary-50">
+      <section className="pt-32 pb-20 bg-primary-50 animate-fade-in-up">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 animate-fade-in-up">
               Events & Programs
             </h1>
-            <div className="h-1 w-20 bg-secondary-500 mx-auto mb-6 rounded"></div>
-            <p className="text-xl text-gray-600">
+            <div className="h-1 w-20 bg-secondary-500 mx-auto mb-6 rounded animate-pulse-slow"></div>
+            <p className="text-xl text-gray-600 animate-fade-in-up" style={{animationDelay: '0.3s'}}>
               Join our upcoming cohort and be part of our mission to bring comfort and care 
               to patients at Baycrest Hospital.
             </p>
@@ -103,7 +103,7 @@ const Events: React.FC = () => {
       </section>
 
       {/* Past Events Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50 animate-fade-in-up">
         <div className="container mx-auto px-4 md:px-6">
           <SectionHeading 
             title="Past Events" 
@@ -138,25 +138,6 @@ const Events: React.FC = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
-          </div>
-        </div>
-      </section>
-
-      {/* Calendar Section */}
-      <section className="py-20 bg-secondary-500 text-white">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-3xl mx-auto text-center">
-            <Calendar size={48} className="mx-auto mb-6" />
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Stay Updated
-            </h2>
-            <p className="text-xl mb-8">
-              Subscribe to our calendar to keep track of upcoming events, training 
-              sessions, and volunteer opportunities.
-            </p>
-            <Button size="lg" className="bg-white text-secondary-600 hover:bg-gray-100">
-              Subscribe to Calendar
-            </Button>
           </div>
         </div>
       </section>
