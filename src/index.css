@@ -74,6 +74,15 @@
   .animate-wobble {
     animation: wobble 2s ease-in-out infinite;
   }
+  
+  .animate-wobble-strong {
+    animation: wobbleStrong 1.5s ease-in-out infinite;
+  }
+  
+  .animate-slide-in-from-right {
+    animation: slideInFromRight 0.4s ease-out forwards;
+    transform: translateX(100%);
+  }
 }
 
 @keyframes float {
@@ -152,5 +161,31 @@
   }
   75% {
     transform: rotate(0.5deg);
+  }
+}
+
+@keyframes wobbleStrong {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(3deg) scale(1.02);
+  }
+  50% {
+    transform: rotate(-2deg) scale(0.98);
+  }
+  75% {
+    transform: rotate(2deg) scale(1.01);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }

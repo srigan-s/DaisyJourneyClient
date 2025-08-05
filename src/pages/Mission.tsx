@@ -99,8 +99,8 @@ const Mission: React.FC = () => {
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover-lift animate-scale-in" style={{animationDelay: '0.1s'}}>
-                <div className="w-14 h-14 bg-gradient-to-br from-primary-100 to-primary-200 rounded-2xl flex items-center justify-center mb-4 animate-bounce-slow">
+              <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover-lift animate-scale-in animate-wobble-strong" style={{animationDelay: '0.1s'}}>
+                <div className="w-14 h-14 bg-gradient-to-br from-primary-100 to-primary-200 rounded-2xl flex items-center justify-center mb-4 animate-bounce-slow animate-wobble-strong">
                   <Heart className="text-primary-600" size={28} />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-3">Compassion</h3>
@@ -110,8 +110,8 @@ const Mission: React.FC = () => {
                 </p>
               </div>
               
-              <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover-lift animate-scale-in" style={{animationDelay: '0.2s'}}>
-                <div className="w-14 h-14 bg-gradient-to-br from-secondary-100 to-secondary-200 rounded-2xl flex items-center justify-center mb-4 animate-bounce-slow" style={{animationDelay: '0.5s'}}>
+              <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover-lift animate-scale-in animate-wobble-strong" style={{animationDelay: '0.2s'}}>
+                <div className="w-14 h-14 bg-gradient-to-br from-secondary-100 to-secondary-200 rounded-2xl flex items-center justify-center mb-4 animate-bounce-slow animate-wobble-strong" style={{animationDelay: '0.5s'}}>
                   <Shield className="text-secondary-600" size={28} />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-3">Integrity</h3>
@@ -121,8 +121,8 @@ const Mission: React.FC = () => {
                 </p>
               </div>
               
-              <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover-lift animate-scale-in" style={{animationDelay: '0.3s'}}>
-                <div className="w-14 h-14 bg-gradient-to-br from-primary-100 to-primary-200 rounded-2xl flex items-center justify-center mb-4 animate-bounce-slow" style={{animationDelay: '1s'}}>
+              <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover-lift animate-scale-in animate-wobble-strong" style={{animationDelay: '0.3s'}}>
+                <div className="w-14 h-14 bg-gradient-to-br from-primary-100 to-primary-200 rounded-2xl flex items-center justify-center mb-4 animate-bounce-slow animate-wobble-strong" style={{animationDelay: '1s'}}>
                   <Users className="text-primary-600" size={28} />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-3">Inclusivity</h3>
@@ -132,8 +132,8 @@ const Mission: React.FC = () => {
                 </p>
               </div>
               
-              <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover-lift animate-scale-in" style={{animationDelay: '0.4s'}}>
-                <div className="w-14 h-14 bg-gradient-to-br from-secondary-100 to-secondary-200 rounded-2xl flex items-center justify-center mb-4 animate-bounce-slow" style={{animationDelay: '1.5s'}}>
+              <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover-lift animate-scale-in animate-wobble-strong" style={{animationDelay: '0.4s'}}>
+                <div className="w-14 h-14 bg-gradient-to-br from-secondary-100 to-secondary-200 rounded-2xl flex items-center justify-center mb-4 animate-bounce-slow animate-wobble-strong" style={{animationDelay: '1.5s'}}>
                   <Smile className="text-secondary-600" size={28} />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-3">Positivity</h3>
@@ -143,8 +143,8 @@ const Mission: React.FC = () => {
                 </p>
               </div>
               
-              <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover-lift animate-scale-in" style={{animationDelay: '0.5s'}}>
-                <div className="w-14 h-14 bg-gradient-to-br from-primary-100 to-primary-200 rounded-2xl flex items-center justify-center mb-4 animate-bounce-slow" style={{animationDelay: '2s'}}>
+              <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover-lift animate-scale-in animate-wobble-strong" style={{animationDelay: '0.5s'}}>
+                <div className="w-14 h-14 bg-gradient-to-br from-primary-100 to-primary-200 rounded-2xl flex items-center justify-center mb-4 animate-bounce-slow animate-wobble-strong" style={{animationDelay: '2s'}}>
                   <Star className="text-primary-600" size={28} />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-3">Excellence</h3>
@@ -154,8 +154,8 @@ const Mission: React.FC = () => {
                 </p>
               </div>
               
-              <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover-lift animate-scale-in" style={{animationDelay: '0.6s'}}>
-                <div className="w-14 h-14 bg-gradient-to-br from-secondary-100 to-secondary-200 rounded-2xl flex items-center justify-center mb-4 animate-bounce-slow" style={{animationDelay: '2.5s'}}>
+              <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover-lift animate-scale-in animate-wobble-strong" style={{animationDelay: '0.6s'}}>
+                <div className="w-14 h-14 bg-gradient-to-br from-secondary-100 to-secondary-200 rounded-2xl flex items-center justify-center mb-4 animate-bounce-slow animate-wobble-strong" style={{animationDelay: '2.5s'}}>
                   <Clock className="text-secondary-600" size={28} />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-3">Dedication</h3>
@@ -184,7 +184,7 @@ const Mission: React.FC = () => {
             </div>
             
             <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover-lift animate-scale-in" style={{animationDelay: '0.1s'}}>
+              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover-lift animate-scale-in animate-wobble-strong" style={{animationDelay: '0.1s'}}>
                 <h3 className="text-xl font-bold mb-4">For Patients</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
@@ -214,7 +214,7 @@ const Mission: React.FC = () => {
                 </ul>
               </div>
               
-              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover-lift animate-scale-in" style={{animationDelay: '0.2s'}}>
+              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover-lift animate-scale-in animate-wobble-strong" style={{animationDelay: '0.2s'}}>
                 <h3 className="text-xl font-bold mb-4">For Hospitals</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
@@ -244,7 +244,7 @@ const Mission: React.FC = () => {
                 </ul>
               </div>
               
-              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover-lift animate-scale-in" style={{animationDelay: '0.3s'}}>
+              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover-lift animate-scale-in animate-wobble-strong" style={{animationDelay: '0.3s'}}>
                 <h3 className="text-xl font-bold mb-4">For Volunteers</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">

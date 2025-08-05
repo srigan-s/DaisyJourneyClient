@@ -113,32 +113,32 @@ const Home: React.FC = () => {
             </div>
             
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="text-center text-white animate-scale-in hover-lift" style={{animationDelay: '0.1s'}}>
-                <div className="bg-white/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 animate-bounce-slow">
+              <div className="text-center text-white animate-scale-in hover-lift animate-wobble-strong" style={{animationDelay: '0.1s'}}>
+                <div className="bg-white/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 animate-bounce-slow animate-wobble-strong">
                   <Users className="text-white" size={32} />
                 </div>
                 <h3 className="text-4xl md:text-5xl font-bold mb-2">50+</h3>
                 <p className="text-xl text-primary-100">Active Volunteers</p>
               </div>
               
-              <div className="text-center text-white animate-scale-in hover-lift" style={{animationDelay: '0.2s'}}>
-                <div className="bg-white/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 animate-bounce-slow" style={{animationDelay: '0.5s'}}>
+              <div className="text-center text-white animate-scale-in hover-lift animate-wobble-strong" style={{animationDelay: '0.2s'}}>
+                <div className="bg-white/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 animate-bounce-slow animate-wobble-strong" style={{animationDelay: '0.5s'}}>
                   <Heart className="text-white" size={32} />
                 </div>
                 <h3 className="text-4xl md:text-5xl font-bold mb-2">500+</h3>
                 <p className="text-xl text-primary-100">Patients Served</p>
               </div>
               
-              <div className="text-center text-white animate-scale-in hover-lift" style={{animationDelay: '0.3s'}}>
-                <div className="bg-white/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 animate-bounce-slow" style={{animationDelay: '1s'}}>
+              <div className="text-center text-white animate-scale-in hover-lift animate-wobble-strong" style={{animationDelay: '0.3s'}}>
+                <div className="bg-white/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 animate-bounce-slow animate-wobble-strong" style={{animationDelay: '1s'}}>
                   <Calendar className="text-white" size={32} />
                 </div>
                 <h3 className="text-4xl md:text-5xl font-bold mb-2">5000+</h3>
                 <p className="text-xl text-primary-100">Volunteer Hours</p>
               </div>
               
-              <div className="text-center text-white animate-scale-in hover-lift" style={{animationDelay: '0.4s'}}>
-                <div className="bg-white/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 animate-bounce-slow" style={{animationDelay: '1.5s'}}>
+              <div className="text-center text-white animate-scale-in hover-lift animate-wobble-strong" style={{animationDelay: '0.4s'}}>
+                <div className="bg-white/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 animate-bounce-slow animate-wobble-strong" style={{animationDelay: '1.5s'}}>
                   <Award className="text-white" size={32} />
                 </div>
                 <h3 className="text-4xl md:text-5xl font-bold mb-2">10+</h3>
