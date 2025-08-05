@@ -191,6 +191,7 @@ const Home: React.FC = () => {
                 quote="As a student, being a member of the Daisy Journey program has opened my eyes to the expansive world of medicine. Understanding different patient's needs, I'm inspired to pursue medicine."
                 name="Rina Parsa"
                 role="Volunteer, 1 year"
+                image="/images/srigan.jpg"
               />
               
               <TestimonialCard 
