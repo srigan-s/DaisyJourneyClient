@@ -35,10 +35,20 @@ const Home: React.FC = () => {
               Empowering compassionate volunteers to make a meaningful difference in healthcare environments
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-6 animate-fade-in-up" style={{animationDelay: '0.6s'}}>
-              <Button size="lg" className="text-lg px-8 py-4 group hover-lift bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800">
-                Join Our Mission
-                <ChevronRight className="ml-2 group-hover:translate-x-1 transition-transform duration-300" />
-              </Button>
+              <a
+  href="https://docs.google.com/forms/d/e/1FAIpQLScSIQU9pljmbx4tyZF0r7wJIypH-ga476heeD_TJeIxj1H_LA/viewform?usp=sf_link"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button
+    size="lg"
+    className="text-lg px-8 py-4 group hover-lift bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800"
+  >
+    Join Our Mission
+    <ChevronRight className="ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+  </Button>
+</a>
+
               <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-primary-600 hover-lift">
                 Learn More
               </Button>
