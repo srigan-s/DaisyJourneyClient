@@ -34,7 +34,7 @@ const Mission: React.FC = () => {
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
               <div className="animate-slide-in-left">
                 <img
-                  src="https://images.pexels.com/photos/6129507/pexels-photo-6129507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
+                  src="images/mission1.jpg"
                   alt="Hospital volunteer helping patient"
                   className="w-full h-auto rounded-2xl shadow-2xl hover-lift"
                 />
