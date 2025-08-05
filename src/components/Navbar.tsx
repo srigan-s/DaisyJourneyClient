@@ -15,10 +15,12 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Close mobile menu on route change
   useEffect(() => {
     setIsOpen(false);
   }, [location]);
 
+  // Prevent body scroll when mobile menu is open
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -27,38 +29,43 @@ const Navbar: React.FC = () => {
     }
   }, [isOpen]);
 
-  // Fix: Force solid background when menu open or scrolled
+  // Navbar background classes based on scroll and menu open state
   const navbarBgClass = isOpen
-    ? 'bg-white shadow-lg py-4' // solid white + shadow when menu open
+    ? 'bg-white shadow-lg py-4' // solid background when menu open
     : scrolled
-    ? 'bg-white/95 backdrop-blur-md shadow-lg py-4' // normal scrolled style
-    : 'bg-transparent py-6'; // initial transparent style
+    ? 'bg-white/95 backdrop-blur-md shadow-lg py-4' // semi-transparent with blur on scroll
+    : 'bg-transparent py-6'; // transparent initially
 
+  // NavLink with border underline on mobile, after pseudo on desktop
   const NavLink = ({ to, children }: { to: string; children: React.ReactNode }) => {
     const isActive = location.pathname === to;
+
     return (
       <Link
         to={to}
-        className={`relative py-3 px-6 font-medium text-lg transition-all duration-300 
+        className={`
+          relative py-3 px-6 font-medium text-lg transition-colors duration-300
           ${isActive ? 'text-primary-700' : 'text-gray-700 hover:text-primary-600'}
-          after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 
-          after:bg-primary-500 after:transition-all after:duration-300
-          ${isActive ? 'after:w-full' : 'hover:after:w-full'}`}
+          ${isActive ? 'border-b-2 border-primary-500 lg:border-b-0' : 'border-b-0 lg:border-b-0'}
+          lg:after:absolute lg:after:bottom-0 lg:after:left-0 lg:after:h-0.5
+          lg:after:w-0 lg:after:bg-primary-500 lg:after:transition-all lg:after:duration-300
+          ${isActive ? 'lg:after:w-full' : 'lg:hover:after:w-full'}
+          lg:will-change-[width]
+        `}
       >
         {children}
       </Link>
     );
   };
 
+  // Proper capitalization for mobile menu labels
   const getLabel = (path: string) => {
     if (path === '/') return 'Home';
     return path.slice(1, 2).toUpperCase() + path.slice(2);
   };
 
   return (
-    <header
-      className={`fixed w-full z-50 transition-all duration-300 ${navbarBgClass}`}
-    >
+    <header className={`fixed w-full z-50 transition-all duration-300 ${navbarBgClass}`}>
       <div className="container mx-auto px-4 md:px-6">
         <nav className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-3">
