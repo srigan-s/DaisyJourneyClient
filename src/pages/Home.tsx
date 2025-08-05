@@ -184,20 +184,21 @@ const Home: React.FC = () => {
                 quote="Volunteering with Daisy's Journey has been the most rewarding experience of my life. Being able to provide comfort to patients during difficult times has given me a new perspective on what truly matters."
                 name="Srigan Siva"
                 role="Volunteer, 2 years"
-                image="/images/srigan.jpg"
+                image="/images/loosrigan.jpg"
               />
               
               <TestimonialCard 
                 quote="As a student, being a member of the Daisy Journey program has opened my eyes to the expansive world of medicine. Understanding different patient's needs, I'm inspired to pursue medicine."
-                name="Rina Parsa"
-                role="Volunteer, 1 year"
-                image="/images/srigan.jpg"
+                name="Sabrina Parsa"
+                role="Volunteer, 2 years"
+                image="/images/sabrina.jpg"
               />
               
               <TestimonialCard 
                 quote="The training and support provided by Daisy's Journey is exceptional. I've grown not only as a volunteer but also as a person through this program."
                 name="Maegan Eisler"
                 role="Volunteer, 1 year"
+                image="/images/maegan.jpg"
               />
             </div>
           </div>
