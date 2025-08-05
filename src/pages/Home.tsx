@@ -195,7 +195,7 @@ const Home: React.FC = () => {
               />
               
               <TestimonialCard 
-                quote="The training and support provided by Daisy's Journey is exceptional. The Founder, Yasmin, is such a charming and organized leader. I've grown not only as a volunteer but also as a person through this program. "
+                quote="The training and support provided by Daisy's Journey is exceptional. The Founder, Yasmin, is such a charming and organized leader. I've grown not only as a volunteer but also as a person through this program."
                 name="Maegan Eisler"
                 role="Volunteer, 1 year"
                 image="/images/maegan.jpg"
