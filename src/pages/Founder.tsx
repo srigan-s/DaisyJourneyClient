@@ -96,7 +96,7 @@ const Founder: React.FC = () => {
                     </div>
                     <div>
                       <img
-                        src="public/images/yasistart.jpg"
+                        src="/images/yasistart.jpg"
                         alt="Foundation moment"
                         className="w-full h-auto rounded-lg shadow-md"
                       />
