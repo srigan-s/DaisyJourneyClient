@@ -15,12 +15,10 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close mobile menu on route change
   useEffect(() => {
     setIsOpen(false);
   }, [location]);
 
-  // Prevent body scroll when mobile menu is open
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -29,14 +27,12 @@ const Navbar: React.FC = () => {
     }
   }, [isOpen]);
 
-  // Navbar background classes based on scroll and menu open state
   const navbarBgClass = isOpen
-    ? 'bg-white shadow-lg py-4' // solid background when menu open
+    ? 'bg-white shadow-lg py-4'
     : scrolled
-    ? 'bg-white/95 backdrop-blur-md shadow-lg py-4' // semi-transparent with blur on scroll
-    : 'bg-transparent py-6'; // transparent initially
+    ? 'bg-white/95 backdrop-blur-md shadow-lg py-4'
+    : 'bg-transparent py-6';
 
-  // NavLink with border underline on mobile, after pseudo on desktop
   const NavLink = ({ to, children }: { to: string; children: React.ReactNode }) => {
     const isActive = location.pathname === to;
 
@@ -58,7 +54,6 @@ const Navbar: React.FC = () => {
     );
   };
 
-  // Proper capitalization for mobile menu labels
   const getLabel = (path: string) => {
     if (path === '/') return 'Home';
     return path.slice(1, 2).toUpperCase() + path.slice(2);
@@ -129,37 +124,41 @@ const Navbar: React.FC = () => {
           aria-hidden={!isOpen}
         >
           <nav className="flex flex-col space-y-8 text-center flex-grow">
-            {['/', '/mission', '/partners', '/events', '/founder'].map((path) => (
-              <Link
-                key={path}
-                to={path}
-                className="text-2xl font-medium text-gray-800 hover:text-primary-600 transition-colors duration-300"
-                onClick={() => setIsOpen(false)}
-              >
-                {getLabel(path)}
-              </Link>
+            {['/', '/mission', '/partners', '/events', '/founder'].map((path, i) => (
+              <React.Fragment key={path}>
+                <Link
+                  to={path}
+                  className="text-2xl font-medium text-gray-800 hover:text-primary-600 transition-colors duration-300"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {getLabel(path)}
+                </Link>
+                {/* Insert social icons directly below 'Founder' */}
+                {path === '/founder' && (
+                  <div className="flex justify-center space-x-8 mt-4">
+                    <a
+                      href="https://www.linkedin.com/company/daisy-s-journey/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="LinkedIn"
+                      className="text-gray-600 hover:text-primary-600 flex items-center justify-center"
+                    >
+                      <Linkedin size={28} />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/journeywithdaisy/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Instagram"
+                      className="text-gray-600 hover:text-primary-600 flex items-center justify-center"
+                    >
+                      <Instagram size={28} />
+                    </a>
+                  </div>
+                )}
+              </React.Fragment>
             ))}
           </nav>
-          <div className="flex justify-center space-x-8 mt-12">
-            <a
-              href="https://www.linkedin.com/company/daisy-s-journey/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-              className="text-gray-600 hover:text-primary-600 flex items-center justify-center"
-            >
-              <Linkedin size={28} />
-            </a>
-            <a
-              href="https://www.instagram.com/journeywithdaisy/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              className="text-gray-600 hover:text-primary-600 flex items-center justify-center"
-            >
-              <Instagram size={28} />
-            </a>
-          </div>
         </div>
       </div>
     </header>
