@@ -155,6 +155,10 @@ const Navbar: React.FC = () => {
                 aria-label="Instagram"
               >
                 <Instagram size={28} />
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
   );
