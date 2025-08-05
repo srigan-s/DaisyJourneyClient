@@ -94,7 +94,7 @@ const Events: React.FC = () => {
               </div>
               <div className="relative h-64 md:h-auto">
                 <img
-                  src="https://images.pexels.com/photos/6646917/pexels-photo-6646917.jpeg"
+                  src="images/lightskin.jpg"
                   alt="Volunteer Program"
                   className="w-full h-full object-cover"
                 />
