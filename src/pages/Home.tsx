@@ -49,9 +49,15 @@ const Home: React.FC = () => {
   </Button>
 </a>
 
-              <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-primary-600 hover-lift">
-                Learn More
-              </Button>
+              <Button
+  size="lg"
+  variant="outline"
+  className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-primary-600 hover-lift"
+  onClick={() => window.scrollBy({ top: 200, behavior: 'smooth' })}
+>
+  Learn More
+</Button>
+
             </div>
           </div>
         </div>
