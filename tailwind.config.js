@@ -35,6 +35,7 @@ export default {
       animation: {
         'fade-in': 'fadeIn 1s ease-in-out',
         'fade-in-up': 'fadeInUp 0.8s ease-out',
+        'wobble': 'wobble 1.8s ease-in-out infinite',
       },
       keyframes: {
         fadeIn: {
@@ -44,6 +45,14 @@ export default {
         fadeInUp: {
           '0%': { opacity: '0', transform: 'translateY(20px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        wobble: {
+          '0%, 100%': { transform: 'translateX(0%) rotate(0deg)' },
+          '15%': { transform: 'translateX(-5%) rotate(-3deg)' },
+          '30%': { transform: 'translateX(4%) rotate(3deg)' },
+          '45%': { transform: 'translateX(-4%) rotate(-2.5deg)' },
+          '60%': { transform: 'translateX(3%) rotate(2deg)' },
+          '75%': { transform: 'translateX(-2%) rotate(-1deg)' },
         },
       },
     },
