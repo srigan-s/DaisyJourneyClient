@@ -119,6 +119,14 @@ const Partners: React.FC = () => {
               If you're interested in bringing Daisy's Journey volunteer programs to your 
               healthcare facility, we'd love to hear from you.
             </p>
+            <a
+            href="https://www.instagram.com/journeywithdaisy/"
+            target="_blank"
+            rel="noopener noreferrer"
+            > 
+            <Button size="lg" className="bg-white text-primary-600 hover:bg-gray-100">
+              Contact Us to Learn More
+            </Button>
             <Button size="lg" className="bg-white text-primary-600 hover:bg-gray-100">
               Contact Us to Learn More
             </Button>
