@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo + Title */}
         <Link to="/" className="flex items-center space-x-2">
-          <img src="/logo.png" alt="Daisy's Journey Logo" className="h-10 w-10" />
+          <img src="/logo.jpg" alt="Daisy's Journey Logo" className="h-10 w-10" />
           <span className="text-xl font-bold text-primary-700">Daisy’s Journey</span>
         </Link>
 
