@@ -215,10 +215,16 @@ const Home: React.FC = () => {
             <p className="text-xl md:text-2xl mb-12 leading-relaxed">
               Join our community of volunteers and help bring comfort and care to those who need it most.
             </p>
+                        <a
+  href="https://docs.google.com/forms/d/e/1FAIpQLScSIQU9pljmbx4tyZF0r7wJIypH-ga476heeD_TJeIxj1H_LA/viewform?usp=sf_link"
+  target="_blank"
+  rel="noopener noreferrer"
+> 
             <Button size="lg" className="text-lg px-8 py-4 bg-white text-secondary-600 hover:bg-gray-100 group hover-lift">
               Become a Volunteer Today
               <ChevronRight className="ml-2 group-hover:translate-x-1 transition-transform duration-300" />
             </Button>
+                        </a>
           </div>
         </div>
       </section>
