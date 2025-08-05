@@ -15,12 +15,10 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close mobile menu on route change
   useEffect(() => {
     setIsOpen(false);
   }, [location]);
 
-  // Prevent body scroll when mobile menu is open
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -28,6 +26,13 @@ const Navbar: React.FC = () => {
       document.body.style.overflow = '';
     }
   }, [isOpen]);
+
+  // Fix: Force solid background when menu open or scrolled
+  const navbarBgClass = isOpen
+    ? 'bg-white shadow-lg py-4' // solid white + shadow when menu open
+    : scrolled
+    ? 'bg-white/95 backdrop-blur-md shadow-lg py-4' // normal scrolled style
+    : 'bg-transparent py-6'; // initial transparent style
 
   const NavLink = ({ to, children }: { to: string; children: React.ReactNode }) => {
     const isActive = location.pathname === to;
@@ -45,7 +50,6 @@ const Navbar: React.FC = () => {
     );
   };
 
-  // Proper label for mobile menu links
   const getLabel = (path: string) => {
     if (path === '/') return 'Home';
     return path.slice(1, 2).toUpperCase() + path.slice(2);
@@ -53,9 +57,7 @@ const Navbar: React.FC = () => {
 
   return (
     <header
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg py-4' : 'bg-transparent py-6'
-      }`}
+      className={`fixed w-full z-50 transition-all duration-300 ${navbarBgClass}`}
     >
       <div className="container mx-auto px-4 md:px-6">
         <nav className="flex items-center justify-between">
