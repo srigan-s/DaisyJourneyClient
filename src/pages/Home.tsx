@@ -184,7 +184,7 @@ const Home: React.FC = () => {
                 quote="Volunteering with Daisy's Journey has been the most rewarding experience of my life. Being able to provide comfort to patients during difficult times has given me a new perspective on what truly matters."
                 name="Srigan Siva"
                 role="Volunteer, 2 years"
-                image="/images/promsri.jpg"
+                image="/images/promski.jpg"
               />
               
               <TestimonialCard 
