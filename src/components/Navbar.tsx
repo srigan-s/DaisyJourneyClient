@@ -69,7 +69,7 @@ const Navbar: React.FC = () => {
                 onClick={() => setIsOpen(false)}
                 className={`text-lg w-full transition-colors duration-200 ${
                   isActive(path)
-                    ? 'text-yellow-400'
+                    ? 'text-yellow-500'
                     : 'text-gray-700 hover:text-primary-600'
                 }`}
               >
