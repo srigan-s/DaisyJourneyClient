@@ -34,8 +34,22 @@ const Navbar: React.FC = () => {
         to={to}
         className={`
           relative py-2 px-4 font-medium text-lg transition-colors duration-300
+          hidden lg:inline-block
           ${isActive ? 'text-primary-700 border-b-2 border-primary-600' : 'text-gray-700 hover:text-primary-600'}
         `}
+        onClick={() => setIsOpen(false)}
+      >
+        {children}
+      </Link>
+    );
+  };
+
+  const MobileNavLink = ({ to, children }: { to: string; children: React.ReactNode }) => {
+    const isActive = location.pathname === to;
+    return (
+      <Link
+        to={to}
+        className={`text-2xl font-medium ${isActive ? 'text-primary-700' : 'text-gray-800 hover:text-primary-600'} transition-colors duration-300`}
         onClick={() => setIsOpen(false)}
       >
         {children}
@@ -121,7 +135,7 @@ const Navbar: React.FC = () => {
         >
           <nav className="flex flex-col space-y-8 text-center flex-grow">
             {navItems.map(({ to, label }) => (
-              <NavLink key={to} to={to}>{label}</NavLink>
+              <MobileNavLink key={to} to={to}>{label}</MobileNavLink>
             ))}
             <div className="flex justify-center space-x-8 mt-4">
               <a
