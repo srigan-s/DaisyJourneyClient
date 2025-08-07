@@ -64,7 +64,11 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <nav className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-3">
-            
+            <img
+          src="/images/daisylogoNObaycrest(1).png"
+          alt="Daisy Icon"
+          className="w-8 h-8 md:w-10 md:h-10 object-contain"
+        />
             <span className="text-2xl md:text-3xl font-bold text-primary-600">Daisy's Journey</span>
           </Link>
 
