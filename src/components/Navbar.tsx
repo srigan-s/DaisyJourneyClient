@@ -64,7 +64,7 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <nav className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-3">
-            <Stethoscope className="text-primary-600" size={28} />
+            
             <span className="text-2xl md:text-3xl font-bold text-primary-600">Daisy's Journey</span>
           </Link>
 
