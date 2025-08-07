@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
         to={to}
         className={`
           relative py-2 px-4 font-medium text-lg transition-colors duration-300
-          ${isActive ? 'text-primary-700' : 'text-gray-700 hover:text-primary-600'}
+          ${isActive ? 'text-primary-700 border-b-2 border-primary-600' : 'text-gray-700 hover:text-primary-600'}
         `}
         onClick={() => setIsOpen(false)}
       >
