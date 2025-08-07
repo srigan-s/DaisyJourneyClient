@@ -39,15 +39,13 @@ const Navbar: React.FC = () => {
     return (
       <Link
         to={to}
-        className={
-          relative py-3 px-6 font-medium text-lg transition-colors duration-300
+        className={`relative py-3 px-6 font-medium text-lg transition-colors duration-300
           ${isActive ? 'text-primary-700' : 'text-gray-700 hover:text-primary-600'}
           ${isActive ? 'border-b-2 border-primary-500 lg:border-b-0' : 'border-b-0 lg:border-b-0'}
           lg:after:absolute lg:after:bottom-0 lg:after:left-0 lg:after:h-0.5
           lg:after:w-0 lg:after:bg-primary-500 lg:after:transition-all lg:after:duration-300
           ${isActive ? 'lg:after:w-full' : 'lg:hover:after:w-full'}
-          lg:will-change-[width]
-        }
+          lg:will-change-[width]`}
       >
         {children}
       </Link>
@@ -60,15 +58,15 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <header className={fixed w-full z-50 transition-all duration-300 ${navbarBgClass}}>
+    <header className={`fixed w-full z-50 transition-all duration-300 ${navbarBgClass}`}>
       <div className="container mx-auto px-4 md:px-6">
         <nav className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-3">
             <img
-          src="/images/daisylogoNObaycrest(1).png"
-          alt="Daisy Icon"
-          className="w-8 h-8 md:w-10 md:h-10 object-contain"
-        />
+              src="/images/daisylogoNObaycrest(1).png"
+              alt="Daisy Icon"
+              className="w-8 h-8 md:w-10 md:h-10 object-contain"
+            />
             <span className="text-2xl md:text-3xl font-bold text-primary-600">Daisy's Journey</span>
           </Link>
 
@@ -114,21 +112,21 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Backdrop */}
         <div
-          className={fixed inset-0 z-40 bg-black/30 transition-opacity duration-300 lg:hidden pointer-events-none ${
+          className={`fixed inset-0 z-40 bg-black/30 transition-opacity duration-300 lg:hidden pointer-events-none ${
             isOpen ? 'opacity-100 visible pointer-events-auto' : 'opacity-0 invisible'
-          }}
+          }`}
           onClick={() => setIsOpen(false)}
         ></div>
 
         {/* Mobile Slide-In Menu */}
         <div
-          className={fixed top-0 right-0 h-full w-4/5 max-w-sm bg-white z-50 transition-transform duration-300 transform ${
+          className={`fixed top-0 right-0 h-full w-4/5 max-w-sm bg-white z-50 transition-transform duration-300 transform ${
             isOpen ? 'translate-x-0' : 'translate-x-full'
-          } shadow-xl pt-24 px-6 flex flex-col}
+          } shadow-xl pt-24 px-6 flex flex-col`}
           aria-hidden={!isOpen}
         >
           <nav className="flex flex-col space-y-8 text-center flex-grow">
-            {['/', '/mission', '/partners', '/events', '/founder'].map((path, i) => (
+            {['/', '/mission', '/partners', '/events', '/founder'].map((path) => (
               <React.Fragment key={path}>
                 <Link
                   to={path}
@@ -137,7 +135,6 @@ const Navbar: React.FC = () => {
                 >
                   {getLabel(path)}
                 </Link>
-                {/* Insert social icons directly below 'Founder' */}
                 {path === '/founder' && (
                   <div className="flex justify-center space-x-8 mt-4">
                     <a
